@@ -21,7 +21,7 @@ The script assumes the following project structure:
 project
 │
 └───qcat-api-scripts
-|   │   ...
+│   │   ...
 │   │
 │   └───config
 │   │   │   tech.py
@@ -31,13 +31,15 @@ project
 │       │   tech.csv
 │   
 └───ECON-WOCAT
-    |   API Response Analysis.ipynb
+    │   API Response Analysis.ipynb
     │   ...
 ```
 
 ## Installation
 
-Within the ECON-WOCAT directory the required packages can be installed before running the script.
+Follow the installation instructions for the [QCAT API Scripts](https://github.com/CDE-UNIBE/qcat-api-scripts) to setup that script.
+
+Within the ECON-WOCAT directory the required packages need to be installed before running the script.
 
 ```bash
 python3 -m venv .venv
@@ -47,11 +49,11 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run the qcat api script with your auth token to generate the output file with the latest questionnaire data.
+The default qcat-api-scripts config file needs to be replaced with the `tech.py` file from this directory.
 
-Start a jupyter notebook session and run the `API Response Analysis` file
+Then run the qcat api script with your auth token to generate the output file with the latest questionnaire data, further instructions can be found here: [QCAT API Scripts](https://github.com/CDE-UNIBE/qcat-api-scripts).
 
-The exported dataset can be found in `cleaned_dataset.xlsx` which will require some additional formatting before it is published.
+Start a jupyter notebook session and run all cells in the `API Response Analysis` file. The exported dataset can be found in `cleaned_dataset.xlsx` which will require some additional formatting before it is published.
 
 ## License
 
